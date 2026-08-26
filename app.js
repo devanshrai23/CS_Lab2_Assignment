@@ -62,10 +62,10 @@ app.post('/login-safe', (req, res) => {
     const { username, password, redirect_to } = req.body;
 
     if (username === 'admin' && password === 'password') {
-        let targetUrl = '/dashboard'; // default
+        let targetUrl = '/dashboard';
         
         // FIXED: redirect_to is validated as a safe relative path
-        if (redirect_to && redirect_to.startsWith('/') && !redirect_to.startsWith('//') && !redirect_to.includes('http://') && !redirect_to.includes('https://')) {
+        if(redirect_to && redirect_to.startsWith('/') && !redirect_to.startsWith('//') && !redirect_to.includes('http://') && !redirect_to.includes('https://')) {
             targetUrl = redirect_to;
         }
 

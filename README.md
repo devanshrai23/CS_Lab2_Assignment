@@ -1,7 +1,7 @@
 # TechBazaar Open Redirect Demo
 
 **Project Title:** TechBazaar Open Redirect Vulnerability Demo
-**Group ID:** [Your Group ID Here]
+**Group ID:** 3 (IIB2024006, IIB2024014, IIB2024034, IIT2024215)
 
 ## Prerequisites
 
